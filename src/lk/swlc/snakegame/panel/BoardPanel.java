@@ -81,8 +81,8 @@ public class BoardPanel extends JPanel implements ActionListener,Runnable {
 
     }
 
-    //    Random put the Dog Image in Board
-    private void randomDOGCoords() {
+    //    Random put the Apple Image in Board
+    private void randomAppleCoords() {
         objectModel.setX(random.nextInt(getWidth() / dotSize) * dotSize);
         objectModel.setY(random.nextInt(getHeight() / dotSize) * dotSize);
     }
@@ -188,7 +188,7 @@ public class BoardPanel extends JPanel implements ActionListener,Runnable {
     public void run() {
         try {
             for(int i = 6; i > 0; i--) {
-                randomDOGCoords();
+                randomAppleCoords();
                 Thread.sleep(6000);
             }
         } catch (InterruptedException e) {

@@ -2,7 +2,7 @@
 <snippet>
   <content>
 
-## SnakeGame-java-swing
+## Java-Swing-Snake-Game
 
 This game has been developed using Java and Java Swing UI
 
